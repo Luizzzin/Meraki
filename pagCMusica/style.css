@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "mont";
+    src: url(./fontes/SwilyBright-Italic.otf);
+}
+
+@font-face {
+    font-family: "mont2";
+    src: url(./fontes/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mont3";
+    src: url(./fontes/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "mont4";
+    src: url(./fontes/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "mont5";
+    src: url(./fontes/CreatoDisplay-Medium.otf);
+}
+
+header {
+background-color: #1A0436;
+height: 200px;
+display: flex;
+flex-direction: column;
+}
+
+body {
+overflow: scroll;
+overflow-x: hidden;
+}
+
+body {
+    background-image: url(./img/fundo1.png);
+    background-size: cover;
+}
+
+.cima {
+background-color: #1A0436;
+height: 90px;
+padding-top:  20px;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+padding-right: 20px;
+}
+
+.bolha {
+width: 90px;
+height: 75px;
+margin-left: 50px;
+}
+
+.conjuto {
+display: flex;
+flex-direction: row;
+}
+
+.logo {
+font-family: "mont";
+color: white;
+width: 190px;
+height: 45px;
+text-align: center;
+display: flex ;
+font-size: 35px;
+font-weight: 400;
+align-items: center;
+justify-content: center;
+padding-top: 10px;
+
+}
+
+#barraPesquisa {
+width: 700px;
+height: 53.79px;
+background-image: url(img/imgHeaderEFooter/barradepesquisa.png);
+margin: 90px;
+border-radius: 18px;
+padding-right: 20px;
+margin-left: 150px;
+background-size: cover;
+}
+
+#barraPesquisa::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+input {
+color: white;
+font-family: "mont2";
+font-size: 15px;
+padding-left: 20px;
+}
+
+.barra {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.perfil a {
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background-image: url(img/imgHeaderEFooter/perfill.png);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-right: 30px;
+background-size: cover;
+color: rgba(255, 255, 255, 0);
+}
+
+.notificacao {
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background: linear-gradient(90deg, #B41D6C, #2A114B);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-left: -15px;
+}
+
+header .baixo {
+font-family: "mont2";
+display: flex;
+flex-direction: row;
+display: flex;
+justify-content: center;
+}
+
+.baixo a{
+color: white;
+margin: 55px;
+font-size: 15px;
+margin-top: 25px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont2";
+letter-spacing: 2px;
+transition: ease-in-out 0.3s;
+}
+
+a:hover {
+font-size: 18px;
+}
+.baner{
+    background-image: url(img/banner.png);
+    height: 780px;
+    width: 1391px;
+    margin-left: 50px;
+    margin-top: -150px;
+}
+.Tbaner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 500;
+    position: relative;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    width: 1264px;
+    margin-bottom: 50px;
+}
+button{
+    width: 169px;
+    height: 46px;
+    border-radius: 60px;
+    font-size: 20px;
+}
+.itens{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 300px;
+    position: relative;
+    width: 307px;
+    height: 425px;
+}
+.tras{
+    transform: rotateY(180deg);
+}
+.card:hover .frente {
+    transform: rotateY(-180deg);
+}
+.card:hover .tras{
+    transform: rotate(0);
+}
+.lado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+.musicae{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.musicad{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: flex-end;
+}
+.textoA{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 698px;
+    height: 128px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.textoA a{
+    font-size: 50px;
+}
+.texto p{
+    font-size: 24px;
+}
+.texto a:hover{
+    color: #4848D8;
+}
+
+
