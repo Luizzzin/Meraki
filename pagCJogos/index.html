@@ -52,7 +52,7 @@
     </div>
     <div class="criadores">
         <div class="fileira">
-            <div class="cartao">
+            <div class="cartaoR">
             <div class="conteudo">
                 <div class="frente">
                     <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
@@ -67,7 +67,7 @@
                 </div>
                 </div>
                 <div class="atras">
-                    <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                    <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                     <img src="img/jogo1.png" alt="">
                 <div class="textoJ">
                     <h1>Moon hunters</h1>
@@ -76,10 +76,10 @@
             </div>
             </div>
             </div>
-            <div class="cartao">
+            <div class="cartaoO">
                 <div class="conteudo">
                     <div class="frente">
-                        <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                        <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                         <img src="img/jogoD2.png" alt="">
                     <div class="textoJ">
                         <div class="titulo">
@@ -91,7 +91,7 @@
                     </div>
                     </div>
                     <div class="atras">
-                        <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                        <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                         <img src="img/jogo2.png" alt="">
                     <div class="textoJ">
                         <h1>out there somewhere</h1>
@@ -102,10 +102,10 @@
             </div>
         </div>
         <div class="fileira">
-            <div class="cartao">
+            <div class="cartaoA">
             <div class="conteudo">
                 <div class="frente">
-                    <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                    <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                     <img src="img/jogoD3.png" alt="">
                 <div class="textoJ">
                     <div class="titulo">
@@ -117,7 +117,7 @@
                 </div>
                 </div>
                 <div class="atras">
-                    <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                    <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                     <img src="img/jogo3.png" alt="">
                 <div class="textoJ">
                     <h1>DOWNWELL</h1>
@@ -126,10 +126,10 @@
             </div>
             </div>
             </div>
-            <div class="cartao">
+            <div class="cartaoZ">
                 <div class="conteudo">
                     <div class="frente">
-                        <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                        <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                         <img src="img/jogoD4.png" alt="">
                     <div class="textoJ">
                         <div class="titulo">
@@ -141,7 +141,7 @@
                     </div>
                     </div>
                     <div class="atras">
-                        <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
+                        <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
                         <img src="img/jogo4.png" alt="">
                     <div class="textoJ">
                         <h1>Dandara</h1>
@@ -152,11 +152,11 @@
             </div>
         </div>
         <div class="fileira">
-            <div class="cartao">
+            <div class="cartaoO">
             <div class="conteudo">
                 <div class="frente">
-                    <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
-                    <img src="img/jogoD3.png" alt="">
+                    <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
+                    <img src="img/jogoD5.png" alt="">
                 <div class="textoJ">
                     <div class="titulo">
                         <div class="roxo"></div>
@@ -167,8 +167,8 @@
                 </div>
                 </div>
                 <div class="atras">
-                    <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
-                    <img src="img/jogo3.png" alt="">
+                    <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
+                    <img src="img/jogo5.png" alt="">
                 <div class="textoJ">
                     <h1>a short hike</h1>
                     <p>uma experiência relaxante onde o jogador explora uma ilha montanhosa em busca de um sinal de celular. O jogo encoraja a exploração livre, com uma atmosfera calma e gráficos em estilo low-poly.</p>
@@ -176,11 +176,11 @@
             </div>
             </div>
             </div>
-            <div class="cartao">
+            <div class="cartaoR">
                 <div class="conteudo">
                     <div class="frente">
-                        <button onclick="virar()"><img src="img/imgFlip.png" alt=""></button>
-                        <img src="img/jogoD4.png" alt="">
+                        <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
+                        <img src="img/jogoD6.png" alt="">
                     <div class="textoJ">
                         <div class="titulo">
                             <div class="rosa"></div>
@@ -192,7 +192,7 @@
                     </div>
                     <div class="atras">
                         <button onclick="virar(event)"><img src="img/imgFlip.png" alt=""></button>
-                        <img src="img/jogo4.png" alt="">
+                        <img src="img/jogo6.png" alt="">
                     <div class="textoJ">
                         <h1>Hyper Light Drifter</h1>
                         <p>uma experiência relaxante onde o jogador explora uma ilha montanhosa em busca de um sinal de celular. O jogo encoraja a exploração livre, com uma atmosfera calma e gráficos em estilo low-poly.</p>
@@ -229,9 +229,21 @@
     </div>
 </footer>
 <script>
+    function vira(event) {
+        const cartaoR = event.currentTarget.closest('.cartaoR');
+        cartaoR.classList.toggle('virado');
+    }
     function virar(event) {
-        const cartao = event.currentTarget.closest('.cartao');
-        cartao.classList.toggle('virado');
+        const cartaoA = event.currentTarget.closest('.cartaoA');
+        cartaoA.classList.toggle('virado');
+    }
+    function virar(event) {
+        const cartaoO = event.currentTarget.closest('.cartaoO');
+        cartaoO.classList.toggle('virado');
+    }
+    function virar(event) {
+        const cartaoZ = event.currentTarget.closest('.cartaoZ');
+        cartaoZ.classList.toggle('virado');
     }
 </script>
 </html>

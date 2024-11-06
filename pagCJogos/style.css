@@ -29,6 +29,11 @@
     src: url(./fontes/CreatoDisplay-Medium.otf);
 }
 
+@font-face {
+    font-family: "mont6";
+    src: url(fontes/Minya\ DEMO.otf);
+}
+
 header {
 background-color: #1A0436;
 height: 200px;
@@ -42,7 +47,7 @@ overflow-x: hidden;
 }
 
 body {
-    background-image: url(fundo.png);
+    background-image: url(img/fundo.png);
     background-size: cover;
 }
 
@@ -159,24 +164,97 @@ transition: ease-in-out 0.3s;
 a:hover {
 font-size: 18px;
 }
+.baner{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(80deg #6A3279 #4848D8);
+    width: 1290px;
+    height: 645px;
+    border-radius: 60px;
+}
 .criadores {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 }
 
 .fileira {
     display: flex;
-    gap: 20px; /* Espaço entre os cartões */
+    flex-direction: row;
 }
 
-.cartao {
-    width: 250px; /* Ajuste para o tamanho desejado */
-    height: 300px; /* Ajuste para o tamanho desejado */
-    perspective: 1000px; /* Necessário para o efeito de virar */
+.cartaoR {
+    width: 497.93px;
+    height: 619.4px;
+    margin: 150px;
+    border-radius: 60px;
+    justify-content: center;
+    background-color: #b41d6b41;
 }
-
+.cartaoR a{
+    font-size: 27px;
+    color: #B41D6C;
+    font-family: "mont6";
+    text-decoration: none;
+}
+.cartaoA {
+    width: 497.93px;
+    height: 619.4px;
+    margin: 150px;
+    border-radius: 60px;
+    justify-content: center;
+    background-color: #feb60064;
+}
+.cartaoA a{
+    font-size: 27px;
+    color: #feb600;
+    font-family: "mont6";
+    text-decoration: none;
+    text-decoration: none;
+}
+.cartaoO {
+    width: 497.93px;
+    height: 619.4px;
+    margin: 150px;
+    border-radius: 60px;
+    justify-content: center;
+    background-color: #6a327960;
+}
+.cartaoO a{
+    font-size: 27px;
+    color: #6A3279;
+    font-family: "mont6";
+    text-decoration: none;
+}
+.cartaoZ {
+    width: 497.93px;
+    height: 619.4px;
+    margin: 150px;
+    border-radius: 60px;
+    justify-content: center;
+    background-color: #4848d858;
+}
+.cartaoZ a{
+    font-size: 27px;
+    color: #4848D8;
+    font-family: "mont6";
+    text-decoration: none;
+}
+.textoJ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textoJ p{
+    width: 409px;
+    text-align: center;
+}
+button{
+    background: none;
+    margin-bottom: -50px;
+    margin-right: -250px;
+    position: relative;
+}
 .conteudo {
     width: 100%;
     height: 100%;
@@ -184,7 +262,14 @@ font-size: 18px;
     transform-style: preserve-3d;
     transition: transform 0.8s;
 }
-
+.titulo{
+    display: flex;
+    flex-direction: row;
+}
+.rosa{
+    height: 12px;
+    width: 107px;
+}
 .frente, .atras {
     position: absolute;
     width: 100%;
@@ -194,12 +279,24 @@ font-size: 18px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 60px;
 }
 
 .atras {
     transform: rotateY(180deg);
 }
 
-.cartao.virado .conteudo {
+.cartaoA.virado .conteudo {
+    transform: rotateY(180deg);
+}
+.cartaoR.virado .conteudo {
+    transform: rotateY(180deg);
+}
+.cartaoO.virado .conteudo {
+    transform: rotateY(180deg);
+}
+.cartaoZ.virado .conteudo {
     transform: rotateY(180deg);
 }
