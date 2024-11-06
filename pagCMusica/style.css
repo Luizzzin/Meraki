@@ -223,9 +223,10 @@ button{
     display: flex;
     flex-direction: row;
     color: white;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: center;
 }
-.textoA{
+.textoe{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -233,15 +234,45 @@ button{
     height: 128px;
     margin-top: 50px;
     margin-left: 50px;
+    font-family: "mont3";
+
 }
-.textoA a{
+.textoe a{
     font-size: 50px;
+    color: white;
+    text-decoration: none;
 }
-.texto p{
-    font-size: 24px;
+.textoe p{
+    font-size: 25px;
+    font-family: "mont2";
+
 }
-.texto a:hover{
+.textoe a:hover{
     color: #4848D8;
+}
+.textod{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 698px;
+    height: 128px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.textod a{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: "mont3";
+}
+.textod a:hover{
+    color: #4848D8;
+}
+
+.textod p{
+    font-size: 25px;
+    font-family: "mont2";
+
 }
 
 
