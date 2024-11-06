@@ -169,20 +169,75 @@ font-size: 18px;
 .Tbaner{
     display: flex;
     flex-direction: column;
-    margin-top: 500;
+    margin-bottom: -500;
     position: relative;
 }
 .botoes{
     display: flex;
-    justify-content: space-around;
     width: 1264px;
     margin-bottom: 50px;
+    justify-content: space-around;
+    margin-left: 45px;
 }
-button{
+.brock{
     width: 169px;
     height: 46px;
     border-radius: 60px;
     font-size: 20px;
+    background-color: #4848D8;
+    color: #FCE6D9;
+    font-family: "mont2";
+
+}
+.bpop{
+    width: 169px;
+    height: 46px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #B41D6C;
+    color: #FCE6D9;
+    font-family: "mont2";
+}
+.bmpb{
+    width: 169px;
+    height: 46px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #FEB500;
+    color: #FCE6D9;
+    font-family: "mont2";
+
+}
+.bhiphop{
+    width: 169px;
+    height: 46px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #6A3279;
+    color: #FCE6D9;
+    font-family: "mont2";
+
+
+}
+.beletronica{
+    width: 169px;
+    height: 46px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #4848D8;
+    color: #FCE6D9;
+    font-family: "mont2";
+
+}
+.bk-pop{
+    width: 169px;
+    height: 46px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #B41D6C;
+    color: #FCE6D9;
+    font-family: "mont2";
+
 }
 .itens{
     display: flex;
@@ -274,5 +329,91 @@ button{
     font-family: "mont2";
 
 }
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 150px;
+}
 
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.bolha1 {
+    width: 70px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+.cimaRodape {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+
+}
+
+.baixoRodape {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+
+.baixoRodape:hover {
+    font-size: 20px;
+}
+
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textoRodape {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+
+}
+.textoRodape1 {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
+}
 
