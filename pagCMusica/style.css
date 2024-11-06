@@ -164,6 +164,9 @@ font-size: 18px;
     height: 780px;
     width: 1391px;
     margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: -150px;
 }
 .Tbaner{
@@ -171,6 +174,24 @@ font-size: 18px;
     flex-direction: column;
     margin-bottom: -500;
     position: relative;
+}
+.B1{
+    font-size: 80px;
+    font-family: "mont3";
+    color: white;
+    margin-left: 50px;
+}
+.B2{
+    font-size: 70px;
+    font-family: "mont";
+    color: white;
+    margin-left: 150px;
+}
+.B3{
+    font-size: 80px;
+    font-family: "mont3";
+    color: white;
+    margin-left: 350px;
 }
 .botoes{
     display: flex;
@@ -187,6 +208,7 @@ font-size: 18px;
     background-color: #4848D8;
     color: #FCE6D9;
     font-family: "mont2";
+    box-shadow: 3px 3px 5px black; 
 
 }
 .bpop{
@@ -197,6 +219,7 @@ font-size: 18px;
     background-color: #B41D6C;
     color: #FCE6D9;
     font-family: "mont2";
+    box-shadow: 3px 3px 5px black; 
 }
 .bmpb{
     width: 169px;
@@ -206,6 +229,7 @@ font-size: 18px;
     background-color: #FEB500;
     color: #FCE6D9;
     font-family: "mont2";
+    box-shadow: 3px 3px 5px black; 
 
 }
 .bhiphop{
@@ -216,6 +240,7 @@ font-size: 18px;
     background-color: #6A3279;
     color: #FCE6D9;
     font-family: "mont2";
+    box-shadow: 3px 3px 5px black; 
 
 
 }
@@ -227,6 +252,7 @@ font-size: 18px;
     background-color: #4848D8;
     color: #FCE6D9;
     font-family: "mont2";
+    box-shadow: 3px 3px 5px black; 
 
 }
 .bk-pop{
@@ -237,6 +263,7 @@ font-size: 18px;
     background-color: #B41D6C;
     color: #FCE6D9;
     font-family: "mont2";
+    box-shadow: 3px 3px 5px black; 
 
 }
 .itens{
