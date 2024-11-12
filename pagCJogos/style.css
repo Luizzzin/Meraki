@@ -171,29 +171,38 @@ font-size: 18px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(143deg, #6a32795b, #4848d853);
+    justify-content: center;
+    background: linear-gradient(143deg, #6a327939, #4848d820);
     width: 1270px;
     height: 645px;
     border-radius: 60px;
-    margin-left: 35px;
+    margin-left: 80px;
+    -webkit-box-shadow:0px 0px 63px 47px rgba(106,50,121,0.42);
+-moz-box-shadow: 0px 0px 63px 47px rgba(106,50,121,0.42);
+box-shadow: 0px 0px 63px 47px rgba(106,50,121,0.42);
 }
 
 .linhaB {
-    position: absolute;
-    left: 30px;
-    top: 200px;
-    height: auto;
+    position: relative;
     width: 200px;
     z-index: 1;
-
+    margin-left: -1350px;
+    width: 277px;
+    height: 158px;
+}
+.Btexto{
+    margin-top: -280px;
+    margin-left: -150px;
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 39px;
 }
 .Btexto h1 {
+    position: relative;
+    z-index: 2;
     font-family: "mont";
-    font-size: 2.5em;
+    font-size: 50px;
     font-weight: 300;
-    margin: 0;
-    line-height: 1.2;
+    width: 800px;
+    color: #ffffff;
 }
 .Btexto h1 span {
     color: #ffffff;
@@ -204,6 +213,8 @@ font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -25px;
+    margin-left: 550px;
 }
 .imgPersonagem {
     position: relative;
@@ -213,17 +224,11 @@ font-size: 18px;
 }
 .estrela {
     position: absolute;
-    top: 50px;
     z-index: 1;
-    width: 600px;
-    height: 573px;
-    margin-left: -150px;
+    width: 1300px;
+    height: 1300px;
 }
 
-.linhaB{
-    width: 277px;
-    height: 158px;
-}
 .criadores {
     display: flex;
     flex-direction: column;
@@ -258,7 +263,7 @@ font-size: 18px;
     height: 254px;
 }
 .cartaoA .frente, .cartaoA .atras {
-    background-color: #feb60064;
+    background-color: #feb6003e;
 }
 
 .cartaoR .frente, .cartaoR .atras {
@@ -268,7 +273,7 @@ font-size: 18px;
     background-color: #6a327960;
 }
 .cartaoZ .frente, .cartaoZ .atras {
-    background-color: #4848d858;
+    background-color: #4848d82a;
 }
 .textoJ{
     display: flex;
@@ -304,17 +309,63 @@ button{
 .titulo a:hover{
     color: #ffffff;
 }
-.titulo a{
+.textoJ h1:hover{
+    color: #ffffff;
+}
+.cartaoR & .titulo a{
     font-size: 35px;
     font-family: "mont6";
     text-decoration: none;
     color: #B41D6C;
 }
-.rosa{
-    height: 5px;
-    width: 107px;
-    background-color: #B41D6C;
-    margin: -6px;
+.cartaoR & .textoJ h1{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #B41D6C;
+}
+.cartaoO & .titulo a{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #2A114B;
+}
+.cartaoO & .textoJ h1{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #2A114B;
+}
+.cartaoA,.titulo a{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #FEB500;
+}
+.cartaoA, .textoJ h1{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #FEB500;
+}
+.cartaoZ, .titulo a{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #4848D8;
+}
+.cartaoZ, .textoJ h1{
+    font-size: 35px;
+    font-family: "mont6";
+    text-decoration: none;
+    color: #4848D8;
+}
+.textoJ{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .frente, .atras {
     position: absolute;
@@ -325,7 +376,6 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding: 20px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 60px;
 }
@@ -389,7 +439,8 @@ letter-spacing: 2px;
 transition: none;
 }
 .baixoRodape:hover {
-    font-size: 25px;
+    font-size: 23px;
+    transition: ease-in-out;
 }
 .redes {
 padding-top: 40px;
