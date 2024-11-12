@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meraki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/imgHeaderEFooter/bolha.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="cima">
+            <div class="logo">
+                <img class="bolha" src="img/imgHeaderEFooter/bolha.png" alt="">
+            <h4 class="logo">Meraki</h4>
+            </div>
+    <div class="barra">
+            <input id="barraPesquisa" type="text" placeholder="Pesquise aqui">
+    </div>
+    <div class="perfil">
+    <a href="">perfil</a>
+    </div>
+    <div class="notificacao">
+    <img src="img/imgHeaderEFooter/sino.png" alt="img">
+    </div>
+    </div>
+    <div class="baixo">
+    <a class="baixo" href="Inicio.html">Inicio</a>
+    <a class="baixo" href="">Categorias</a>
+    <a class="baixo" href="">Noticias</a>
+    <a class="baixo" href="">Eventos</a>
+    <a class="baixo" href="formulário.html">Formulário</a>
+    <a class="baixo" href="">Comunidade</a>
+    <a class="baixo" href="">Sobre Nós</a>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="baner">
+            <img class="estrela1B" src="img/banner/estrela1.png" alt="">
+            <img class="Bimg1"  src="img/banner/baner1.png" alt="">
+            <div class="banerT">
+            <h1 class="eventos">EVENTOS</h1>
+            <h1 class="magicas">MÁGICOS</h1>
+            </div>
+            <img class="estrela2B" src="img/banner/estrela2.png" alt="">
+            <img class="Bimg2" src="img/banner/baner2.png" alt="">
+            <img class="Bimg3" src="img/banner/baner3.png" alt="">
+            <img class="estrela3" src="img/banner/estrela3.png" alt="">
+        </div>
+        <div class="botoes">
+            <button class="brock" onclick="filtrar('grupo1')">JULHO</button>
+            <button class="bpop" onclick="filtrar('grupo2')">AGOSTO</button>
+            <button class="bmpb" onclick="filtrar('grupo3')">SETEMBRO</button>
+            <button class="bhiphop" onclick="filtrar('grupo4')">OUTUBRO</button>
+            <button class="beletronica" onclick="filtrar('grupo5')">NOVEMBRO</button>
+            <button class="bk-pop" onclick="filtrar('grupo6')">DEZEMBRO</button>
+        </div>
+        <div class="itens">
+            <div class="item grupo5">
+                <div class="eventoT">
+                    <img src="img/eventoP/estrelaEvento1.png" alt="">
+                    <img src="img/eventoP/imgEvento1.png" alt="">
+                    <h1 class="TT">Artistas idenpendentes se juntam em performance ao-vivo</h1>
+                </div>
+                <div id="overlay" onclick="off()">
+                    <div id="detalhes">
+                        <div class="bege">
+                            <h1 class="Tdetalhes">Detalhes do evento</h1>
+                            <div class="textos">
+                            <p class="texto">Venha explorar o talento de artistas emergentes na "Exposição de Esculturas"! Nesta mostra exclusiva, artistas ainda desconhecidos apresentam suas obras, trazendo visões únicas e criativas em uma variedade de estilos e materiais. Este é um convite para descobrir novos nomes e inspirar-se com esculturas que contam histórias, despertam emoções e desafiam perspectivas.</p>
+                            <h3 class="amarelo">ENTRADA</h3>
+                            <p class="texto">A entrada para a Exposição de Esculturas é gratuita! Venha e aproveite essa oportunidade única de conhecer novos talentos e se encantar com cada obra.</p>
+                            <h3 class="amarelo">LOCAL</h3>
+                            <p class="texto">O evento acontecerá no Centro Cultural Fiesp, localizado na Avenida Paulista.</p>
+                            <h3 class="amarelo">DIA E HORA</h3>
+                            <p class="texto">Dia 29 de novembro, das 10h às 18h</p>
+                            </div>
+                            <img src="img/eventoG/evento1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="padding:20px">
+                    <div class="eventoT" onclick="on()">
+                        <img src="img/eventoP/estrelaEvento2.png" alt="">
+                    <img src="img/eventoP/imgEvento2.png" alt="">
+                    <h1 class="TT">Descubra Novos Talentos: Exposicao de Esculturas</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="item grupo6">
+                <div id="overlay" onclick="off()">
+                    <div id="detalhes">
+                        <div class="bege">
+                            <h1 class="Tdetalhes">Detalhes do evento</h1>
+                            <div class="textos">
+                            <p class="texto">Entre no espírito natalino com a "Natal de Arte e Talento", uma exposição especial de fotógrafos e ilustradores que trazem a magia do Natal para cada clique e traço. Artistas emergentes apresentam obras inspiradas nas celebrações de fim de ano, explorando temas como luzes natalinas, paisagens de inverno e momentos festivos.</p>
+                            <h3 class="amarelo">ENTRADA</h3>
+                            <p class="texto">Gratuita para todos!</p>
+                            <h3 class="amarelo">LOCAL</h3>
+                            <p class="texto">Museu da Imagem e do Som (MIS), Avenida Europa, São Paulo</p>
+                            <h3 class="amarelo">DIA E HORA</h3>
+                            <p class="texto">10 de dezembro, das 11h às 19h</p>
+                            </div>
+                            <img src="img/eventoG/evento2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="padding:20px">
+                    <div class="eventoT" onclick="on()">
+                        <img src="img/eventoP/estrelaEvento3.png" alt="">
+                    <img src="img/eventoP/imgEvento3.png" alt="">
+                    <h1 class="TT">Natal de Arte e Talento: Mostra de Fotógrafos e Ilustradores</h1>
+                    </div>
+                    <div id="overlay" onclick="off()">
+                        <div id="detalhes">
+                            <div class="bege">
+                                <h1 class="Tdetalhes">Detalhes do evento</h1>
+                                <div class="textos">
+                                <p class="texto"> Venha dar boas-vindas ao Ano Novo na "Festa de Artistas", um evento especial que reúne músicos e performers talentosos. Este espetáculo vibrante contará com apresentações ao vivo, danças e intervenções artísticas que celebram a renovação e a esperança do novo ano.</p>
+                                <h3 class="amarelo">ENTRADA</h3>
+                                <p class="texto">A entrada para a "Festa de Artistas" custa R$ 10, a ser paga na entrada do evento.</p>
+                                <h3 class="amarelo">LOCAL</h3>
+                                <p class="texto">Praça da República, São Paulo</p>
+                                <h3 class="amarelo">DIA E HORA</h3>
+                                <p class="texto">31 de dezembro, das 16h às 22h</p>
+                                </div>
+                                <img src="img/eventoG/evento3.png"">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding:20px">
+                        <div class="eventoT" onclick="on()">
+                            <img src="img/eventoP/estrelaEvento4.png" alt="">
+                        <img src="img/eventoP/imgEvento4.png" alt="">
+                        <h1 class="TT">Festa de Artistas: Celebrando o Novo Ano com Música e Performance</h1>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cimaRodape">
+        <div class="logo1">
+            <img class="bolha1" src="img/imgHeaderEFooter/bolha.png" alt="">
+        <h4 class="logo1">Meraki</h4>
+    </div>
+        </div>
+        <div>
+            <a class="baixoRodape" href="Inicio.html">Inicio</a>
+            <a class="baixoRodape" href="">Categorias</a>
+            <a class="baixoRodape" href="">Noticias</a>
+            <a class="baixoRodape" href="">Eventos</a>
+            <a class="baixoRodape" href="formulário.html">Formulário</a>
+            <a class="baixoRodape" href="">Comunidade</a>
+            <a class="baixoRodape" href="">Sobre Nós</a>
+                </div>
+                <img class="redes" src="img/imgHeaderEFooter/redesSociais.png" alt="">
+        </div>
+        <div class="fim">
+            <div class="textosRodape">
+            <p class="textoRodape1">Copyright 2024 © Todos os direitos reservados.</p>
+            <p class="textoRodape">Política de Privacidade</p>
+        </div>
+        </div>
+    </footer>
+    <style>
+        #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        cursor: pointer;
+        }
+        
+        #text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        }
+        .oculto {
+            display: none;
+        }
+        </style>
+    <script>
+        function on() {
+        document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+        document.getElementById("overlay").style.display = "none";
+        }
+
+        function filtrar(grupo) {
+            const itens = document.querySelectorAll(".item");
+    
+            itens.forEach((item) => {
+                if (item.classList.contains(grupo)) {
+                    item.classList.remove("oculto");
+                } else {
+                    item.classList.add("oculto");
+                }
+            });
+        }
+        </script>
+</body>
+</html>
