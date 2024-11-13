@@ -10,6 +10,10 @@
     padding: 0;
     margin: 0;
 }
+.oculto {
+    display: none;
+}
+
 @font-face {
     font-family: "mont";
     src: url(./fontes/SwilyBright-Italic.otf);
@@ -218,5 +222,215 @@ font-size: 18px;
     margin-right: -150px;
 }
 .estrela3B{
-    
+    margin-right: -550ox;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+button{
+    width: 184px;
+    height: 48px;
+    border-radius: 60px;
+    font-family: "mont5";
+    font-size: 20px;
+    margin: 20px;
+}
+.rosa{
+    background-color: #b41d6b4c;
+    border: solid rgba(0, 0, 0, 0.549) 2px;
+    opacity: 50%;
+}
+.roxo{
+    background-color: #6a327945;
+    border: solid rgba(0, 0, 0, 0.555) 2px;
+    opacity: 50%;
+}
+.azul{
+    background-color: #4848d833;
+    border: solid rgba(0, 0, 0, 0.555) 2px;
+    opacity: 50%;
+}
+.amarelo{
+    background-color: #feb60040;
+    border: solid rgba(0, 0, 0, 0.555) 2px;
+    opacity: 50%;
+}
+.ROSA{
+    background-color: #b41d6b;
+    border: solid rgb(0, 0, 0) 2px;
+}
+.ROXO{
+    background-color: #6a3279;
+    border: solid rgb(0, 0, 0) 2px;
+}
+.G1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 100px;
+}
+.G2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 100px;
+    border: solid black 5px;
+}
+.eventoT{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-color: #fce6d9a8;
+    width: 433px;
+    height: 415px;
+    border-radius: 60px 60px 0 0;
+    opacity: 70%;
+}
+.estrelaT{
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    position: relative;
+    z-index: 2;
+    opacity: 70%;
+}
+.imgET{
+    width: 408px;
+    height: 314px;
+    margin-top: -190px;
+    margin-left: 13px;
+    opacity: 70%;
+}
+.TT{
+    font-size: 23px;
+    font-family: "mont";
+    text-align: center;
+    font-weight: 50;
+    margin-top: 15px;
+    opacity: 70%;
+}
+.evento{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-color: #fce6d9;
+    width: 433px;
+    height: 415px;
+    border-radius: 60px 60px 0 0;
+}
+.estrela{
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    position: relative;
+    z-index: 2;
+}
+.imgE{
+    width: 408px;
+    height: 314px;
+    margin-top: -190px;
+    margin-left: 13px;
+}
+.T{
+    font-size: 23px;
+    font-family: "mont";
+    text-align: center;
+    font-weight: 50;
+    margin-top: 15px;
+}
+.detalhes1{
+    width: 1198px;
+    height: 686px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bege{
+    width: 568px;
+    height: 686px;
+    background-color: #fce6d9;
+    border-radius: 60px 0 60px 0;
+}
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.bolha1 {
+    width: 70px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+.cimaRodape {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+}
+.baixoRodape {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+.baixoRodape:hover {
+    font-size: 23px;
+    transition: ease-in-out;
+}
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textoRodape {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.textoRodape1 {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
 }

@@ -50,92 +50,91 @@
             <img class="estrela3B" src="img/banner/estrela3.png" alt="">
         </div>
         <div class="botoes">
-            <button class="brock" onclick="filtrar('grupo1')">JULHO</button>
-            <button class="bpop" onclick="filtrar('grupo2')">AGOSTO</button>
-            <button class="bmpb" onclick="filtrar('grupo3')">SETEMBRO</button>
-            <button class="bhiphop" onclick="filtrar('grupo4')">OUTUBRO</button>
-            <button class="beletronica" onclick="filtrar('grupo5')">NOVEMBRO</button>
-            <button class="bk-pop" onclick="filtrar('grupo6')">DEZEMBRO</button>
+            <button class="rosa" >JULHO</button>
+            <button class="roxo" >AGOSTO</button>
+            <button class="azul" >SETEMBRO</button>
+            <button class="amarelo" >OUTUBRO</button>
+            <button class="ROSA" onclick="filtrar('grupo5')">NOVEMBRO</button>
+            <button class="ROXO" onclick="filtrar('grupo6')">DEZEMBRO</button>
         </div>
         <div class="itens">
             <div class="item grupo5">
                 <div class="eventoT">
-                    <img src="img/eventoP/estrelaEvento1.png" alt="">
-                    <img src="img/eventoP/imgEvento1.png" alt="">
-                    <h1 class="TT">Artistas idenpendentes se juntam em performance ao-vivo</h1>
+                    <img class="estrelaT" src="img/eventoP/estrelaEvento1.png" alt="">
+                    <img class="imgET" src="img/eventoP/imgEvento1.png" alt="">
+                    <h1 class="TT">Artistas independentes se juntam em performance ao-vivo</h1>
                 </div>
-                <div id="overlay" onclick="off()">
-                    <div id="detalhes">
-                        <div class="bege">
-                            <h1 class="Tdetalhes">Detalhes do evento</h1>
-                            <div class="textos">
-                            <p class="texto">Venha explorar o talento de artistas emergentes na "Exposição de Esculturas"! Nesta mostra exclusiva, artistas ainda desconhecidos apresentam suas obras, trazendo visões únicas e criativas em uma variedade de estilos e materiais. Este é um convite para descobrir novos nomes e inspirar-se com esculturas que contam histórias, despertam emoções e desafiam perspectivas.</p>
-                            <h3 class="amarelo">ENTRADA</h3>
-                            <p class="texto">A entrada para a Exposição de Esculturas é gratuita! Venha e aproveite essa oportunidade única de conhecer novos talentos e se encantar com cada obra.</p>
-                            <h3 class="amarelo">LOCAL</h3>
-                            <p class="texto">O evento acontecerá no Centro Cultural Fiesp, localizado na Avenida Paulista.</p>
-                            <h3 class="amarelo">DIA E HORA</h3>
-                            <p class="texto">Dia 29 de novembro, das 10h às 18h</p>
-                            </div>
-                            <img src="img/eventoG/evento1.png" alt="">
+                
+                <div class="evento" onclick="showOverlay('overlay1')">
+                    <img class="estrela" src="img/eventoP/estrelaEvento2.png" alt="">
+                    <img class="imgE" src="img/eventoP/imgEvento2.png" alt="">
+                    <h1 class="T">Descubra Novos Talentos: Exposição de Esculturas</h1>
+                </div>
+
+                <div id="overlay1" onclick="hideOverlay('overlay1')">
+                    <div class="bege">
+                        <h1 class="Tdetalhes">Detalhes do evento</h1>
+                        <div class="textos">
+                        <p class="texto"> Venha dar boas-vindas ao Ano Novo na "Festa de Artistas", um evento especial que reúne músicos e performers talentosos. Este espetáculo vibrante contará com apresentações ao vivo, danças e intervenções artísticas que celebram a renovação e a esperança do novo ano.</p>
+                        <h3 class="amarelo">ENTRADA</h3>
+                        <p class="texto">A entrada para a "Festa de Artistas" custa R$ 10, a ser paga na entrada do evento.</p>
+                        <h3 class="amarelo">LOCAL</h3>
+                        <p class="texto">Praça da República, São Paulo</p>
+                        <h3 class="amarelo">DIA E HORA</h3>
+                        <p class="texto">31 de dezembro, das 16h às 22h</p>
                         </div>
-                    </div>
-                </div>
-                <div style="padding:20px">
-                    <div class="eventoT" onclick="on()">
-                        <img src="img/eventoP/estrelaEvento2.png" alt="">
-                    <img src="img/eventoP/imgEvento2.png" alt="">
-                    <h1 class="TT">Descubra Novos Talentos: Exposicao de Esculturas</h1>
+                        <img src="img/eventoG/evento3.png" alt="">
+                        <img src="img/eventoG/evento1.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="item grupo6">
-                <div id="overlay" onclick="off()">
-                    <div id="detalhes">
-                        <div class="bege">
-                            <h1 class="Tdetalhes">Detalhes do evento</h1>
-                            <div class="textos">
-                            <p class="texto">Entre no espírito natalino com a "Natal de Arte e Talento", uma exposição especial de fotógrafos e ilustradores que trazem a magia do Natal para cada clique e traço. Artistas emergentes apresentam obras inspiradas nas celebrações de fim de ano, explorando temas como luzes natalinas, paisagens de inverno e momentos festivos.</p>
-                            <h3 class="amarelo">ENTRADA</h3>
-                            <p class="texto">Gratuita para todos!</p>
-                            <h3 class="amarelo">LOCAL</h3>
-                            <p class="texto">Museu da Imagem e do Som (MIS), Avenida Europa, São Paulo</p>
-                            <h3 class="amarelo">DIA E HORA</h3>
-                            <p class="texto">10 de dezembro, das 11h às 19h</p>
-                            </div>
-                            <img src="img/eventoG/evento2.png" alt="">
+                <div class="evento" onclick="showOverlay('overlay2')">
+                    <img class="estrela" src="img/eventoP/estrelaEvento3.png" alt="">
+                    <img class="imgE" src="img/eventoP/imgEvento3.png" alt="">
+                    <h1 class="T">Natal de Arte e Talento: Mostra de Fotógrafos e Ilustradores</h1>
+                </div>
+                <div id="overlay2" onclick="hideOverlay('overlay2')">
+                    <div class="bege">
+                        <h1 class="Tdetalhes">Detalhes do evento</h1>
+                        <div class="textos">
+                        <p class="texto"> Venha dar boas-vindas ao Ano Novo na "Festa de Artistas", um evento especial que reúne músicos e performers talentosos. Este espetáculo vibrante contará com apresentações ao vivo, danças e intervenções artísticas que celebram a renovação e a esperança do novo ano.</p>
+                        <h3 class="amarelo">ENTRADA</h3>
+                        <p class="texto">A entrada para a "Festa de Artistas" custa R$ 10, a ser paga na entrada do evento.</p>
+                        <h3 class="amarelo">LOCAL</h3>
+                        <p class="texto">Praça da República, São Paulo</p>
+                        <h3 class="amarelo">DIA E HORA</h3>
+                        <p class="texto">31 de dezembro, das 16h às 22h</p>
                         </div>
+                        <img src="img/eventoG/evento3.png">
+                        <img src="img/eventoG/evento2.png" alt="">
                     </div>
                 </div>
-                <div style="padding:20px">
-                    <div class="eventoT" onclick="on()">
-                        <img src="img/eventoP/estrelaEvento3.png" alt="">
-                    <img src="img/eventoP/imgEvento3.png" alt="">
-                    <h1 class="TT">Natal de Arte e Talento: Mostra de Fotógrafos e Ilustradores</h1>
-                    </div>
-                    <div id="overlay" onclick="off()">
-                        <div id="detalhes">
-                            <div class="bege">
-                                <h1 class="Tdetalhes">Detalhes do evento</h1>
-                                <div class="textos">
-                                <p class="texto"> Venha dar boas-vindas ao Ano Novo na "Festa de Artistas", um evento especial que reúne músicos e performers talentosos. Este espetáculo vibrante contará com apresentações ao vivo, danças e intervenções artísticas que celebram a renovação e a esperança do novo ano.</p>
-                                <h3 class="amarelo">ENTRADA</h3>
-                                <p class="texto">A entrada para a "Festa de Artistas" custa R$ 10, a ser paga na entrada do evento.</p>
-                                <h3 class="amarelo">LOCAL</h3>
-                                <p class="texto">Praça da República, São Paulo</p>
-                                <h3 class="amarelo">DIA E HORA</h3>
-                                <p class="texto">31 de dezembro, das 16h às 22h</p>
-                                </div>
-                                <img src="img/eventoG/evento3.png"">
-                            </div>
+            </div>
+
+            <div class="item grupo6">
+                <div class="evento" onclick="showOverlay('overlay3')">
+                    <img class="estrela" src="img/eventoP/estrelaEvento4.png" alt="">
+                    <img class="imgE" src="img/eventoP/imgEvento4.png" alt="">
+                    <h1 class="T">Festa de Artistas: Celebrando o Novo Ano com Música e Performance</h1>
+                </div>
+
+                <div id="overlay3" onclick="hideOverlay('overlay3')">
+                    <div class="bege">
+                        <h1 class="Tdetalhes">Detalhes do evento</h1>
+                        <h1 class="Tdetalhes">Detalhes do evento</h1>
+                        <div class="textos">
+                        <p class="texto"> Venha dar boas-vindas ao Ano Novo na "Festa de Artistas", um evento especial que reúne músicos e performers talentosos. Este espetáculo vibrante contará com apresentações ao vivo, danças e intervenções artísticas que celebram a renovação e a esperança do novo ano.</p>
+                        <h3 class="amarelo">ENTRADA</h3>
+                        <p class="texto">A entrada para a "Festa de Artistas" custa R$ 10, a ser paga na entrada do evento.</p>
+                        <h3 class="amarelo">LOCAL</h3>
+                        <p class="texto">Praça da República, São Paulo</p>
+                        <h3 class="amarelo">DIA E HORA</h3>
+                        <p class="texto">31 de dezembro, das 16h às 22h</p>
                         </div>
+                        <img src="img/eventoG/evento3.png"">
+                        <img src="img/eventoG/evento3.png" alt="">
                     </div>
-                    <div style="padding:20px">
-                        <div class="eventoT" onclick="on()">
-                            <img src="img/eventoP/estrelaEvento4.png" alt="">
-                        <img src="img/eventoP/imgEvento4.png" alt="">
-                        <h1 class="TT">Festa de Artistas: Celebrando o Novo Ano com Música e Performance</h1>
-                        </div>
                 </div>
             </div>
         </div>
@@ -166,42 +165,27 @@
         </div>
     </footer>
     <style>
-        #overlay {
-        position: fixed;
-        display: none;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.5);
-        z-index: 2;
-        cursor: pointer;
-        }
-        
-        #text{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 50px;
-        color: white;
-        transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        }
-        .oculto {
+        #overlay1, #overlay2, #overlay3 {
+            position: fixed;
             display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 3;
+            align-items: center;
+            justify-content: center;
         }
-        </style>
+    </style>
     <script>
-        function on() {
-        document.getElementById("overlay").style.display = "block";
-        }
-        
-        function off() {
-        document.getElementById("overlay").style.display = "none";
+        function showOverlay(id) {
+            document.getElementById(id).style.display = "flex";
         }
 
+        function hideOverlay(id) {
+            document.getElementById(id).style.display = "none";
+        }
         function filtrar(grupo) {
             const itens = document.querySelectorAll(".item");
     
