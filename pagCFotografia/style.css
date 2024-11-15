@@ -1,0 +1,42 @@
+.foto-container {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Ajuste conforme necessário */
+    text-align: center;
+}
+
+.foto-container img {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hide1, .hide2, .hide3, .hide4, .hide5, .hide6 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.foto-container:hover .show1,
+.foto-container:hover .show2,
+.foto-container:hover .show3,
+.foto-container:hover .show4,
+.foto-container:hover .show5,
+.foto-container:hover .show6 {
+    opacity: 0.3;
+}
+
+.foto-container:hover .hide1,
+.foto-container:hover .hide2,
+.foto-container:hover .hide3,
+.foto-container:hover .hide4,
+.foto-container:hover .hide5,
+.foto-container:hover .hide6 {
+    display: block;
+}
