@@ -42,7 +42,7 @@
         <h1>Fotografia é o ato de parar o <br> tempo com um único olhar.</h1>
     </div>
     <div class="itens">
-        <div class="grupo1">
+        <div class="item grupo1">
             <div class="fotos">
                 <div class="foto-container">
                     <img class="show1" src="img/imgPaisagismo/paigismo1.png" alt="">
@@ -93,7 +93,7 @@
     </div>
         </div>
     </div>
-    <div class="grupo2">
+    <div class="item grupo2">
         <div class="fotos">
             <div class="foto-container">
                 <img class="show1" src="img/imgDocumental/documental1.png" alt="">
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="grupo3">
+        <div class="item grupo3">
             <div class="fotos">
                 <div class="foto-container">
                     <img class="show1" src="img/imgUrbana/urbana1.png" alt="">
@@ -205,7 +205,66 @@
                     </div>
                 </div>
             </div>
+            <div class="botoes">
+                <button onclick="toggleFiltros()"> 
+                    <img src="" alt=""> 
+                    <p>Filtros</p>
+                </button>
+                <div id="filtros" style="display: none;"> <!-- Div com botões de filtros -->
+                    <button onclick="filtrar('grupo1')">Paisagismo</button>
+                    <button onclick="filtrar('grupo2')">Documental</button>
+                    <button onclick="filtrar('grupo3')">Urbana</button>
+                </div>
+            </div>
+            
     </div>
 </main>
+<footer>
+    <div class="cimaRodape">
+    <div class="logo1">
+        <img class="bolha1" src="img/imgHeaderEFooter/bolha.png" alt="">
+    <h4 class="logo1">Meraki</h4>
+</div>
+    </div>
+    <div>
+        <a class="baixoRodape" href="Inicio.html">Inicio</a>
+        <a class="baixoRodape" href="">Categorias</a>
+        <a class="baixoRodape" href="">Noticias</a>
+        <a class="baixoRodape" href="">Eventos</a>
+        <a class="baixoRodape" href="formulário.html">Formulário</a>
+        <a class="baixoRodape" href="">Comunidade</a>
+        <a class="baixoRodape" href="">Sobre Nós</a>
+            </div>
+            <img class="redes" src="img/imgHeaderEFooter/redesSociais.png" alt="">
+    </div>
+    <div class="fim">
+        <div class="textosRodape">
+        <p class="textoRodape1">Copyright 2024 © Todos os direitos reservados.</p>
+        <p class="textoRodape">Política de Privacidade</p>
+    </div>
+    </div>
+</footer>
+<script>
+    function filtrar(grupo) {
+            const itens = document.querySelectorAll(".item");
+    
+            itens.forEach((item) => {
+                if (item.classList.contains(grupo)) {
+                    item.classList.remove("oculto");
+                } else {
+                    item.classList.add("oculto");
+                }
+            });
+        }
+        function toggleFiltros() {
+    const filtrosDiv = document.getElementById("filtros");
+
+    if (filtrosDiv.style.display === "none" || filtrosDiv.style.display === "") {
+        filtrosDiv.style.display = "block";
+    } else {
+        filtrosDiv.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
