@@ -1,7 +1,7 @@
 .foto-container {
     position: relative;
     display: inline-block;
-    width: 200px; /* Ajuste conforme necessário */
+    width: 200px;
     text-align: center;
 }
 
@@ -17,7 +17,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9);
     z-index: 2;
     text-align: center;
     padding: 10px;
@@ -399,4 +398,45 @@ font-size: 18px;
     width: 1223px;
     height: 733px;
     margin-left: 150px;
+}
+.fotos{
+    display: flex;
+    flex-direction: column;
+    width: 1223px;
+    height: 1346px;
+    justify-content: center;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1221px;
+    height: 907;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 658px;
+    height: 907px;
+}
+.column1 img{
+    width: 642px;
+    height: 454px;
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row2 img{
+    width: 545px;
+    height: 907px;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1221px;
+    height: 415px;
 }
