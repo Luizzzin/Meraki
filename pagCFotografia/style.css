@@ -3,11 +3,33 @@
     display: inline-block;
     width: 200px;
     text-align: center;
+    position: relative;
+}
+.foto-container a {
+    margin-top: 5px;
+}
+
+.foto-container p {
+    margin-top: 10px;
 }
 
 .foto-container img {
     width: 100%;
     transition: opacity 0.3s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+.hide1, .hide2, .hide3, .hide4, .hide5, .hide6 {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.foto-container:hover .hide1,
+.foto-container:hover .hide2 {
+    opacity: 1;
+    visibility: visible;
 }
 
 .hide1, .hide2, .hide3, .hide4, .hide5, .hide6 {
@@ -261,7 +283,7 @@ nav li .pag {
     padding: 20px;
 }
 
-.dropdown:hover .dropdown-menu { /*ao passar o mous, as opções aparecem*/
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 body {
@@ -437,6 +459,143 @@ font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 1221px;
     height: 415px;
+}
+.row3 img{
+    width: 380px;
+    height: 415px;
+}
+.row4{
+    width: 1442px;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+}
+.row4 img{
+    width: 612px;
+    height: 420px;
+}
+.column2{
+    width: 570px;
+    height: 932px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column2 img{
+    width: 550px;
+    height: 560px;
+}
+.botoes{
+    position: relative;
+    z-index: 3;
+}
+.filtrar button{
+    color: #1a043600;
+    background-color: rgba(0, 0, 0, 0.236);
+    border: 3px solid #FCE6D9;
+    font-size: 28px;
+    border-radius: 60px;
+    -webkit-text-stroke: #FCE6D9 1px;
+    width: fit-content;
+    height: fit-content;
+}
+.filtrar {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+    height: 356px;
+}
+.filtro{
+    background-color: #FCE6D9;
+    font-size: 17px;
+    color: black;
+    border-radius: 60px;
+    width: 137px;
+    height: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.bolha1 {
+    width: 70px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+.cimaRodape {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+}
+.baixoRodape {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+.baixoRodape:hover {
+    font-size: 23px;
+    transition: ease-in-out;
+}
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textoRodape {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.textoRodape1 {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
 }
