@@ -3,7 +3,7 @@
     border: 0;
     padding: 0;
 }
-.oculto{
+.oculto {
     opacity: 0;
     visibility: hidden;
     height: 0;
@@ -11,6 +11,10 @@
     margin: 0;
 }
 .oculto {
+    display: none;
+}
+
+#overlay1, #overlay2, #overlay3 {
     display: none;
 }
 
