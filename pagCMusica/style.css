@@ -91,7 +91,7 @@ body {
 #barraPesquisa {
     width: 700px;
     height: 53.79px;
-    background-image: url(./img/barradepesquisa.png);
+    background-image: url(img/imgHeaderEFooter/barradepesquisa.png);
     margin:90px;
     border-radius: 18px;
     padding-right: 20px;
@@ -218,24 +218,23 @@ nav li .pag {
     padding: 20px;
 }
 
-.dropdown:hover .dropdown-menu { /*ao passar o mous, as opções aparecem*/
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 .baner{
     background-image: url(img/banner.png);
     height: 780px;
     width: 1391px;
-    margin-left: 50px;
+    margin-left: 150px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: -150px;
-    margin-left: 120px;
 }
 .Tbaner{
     display: flex;
     flex-direction: column;
-    margin-bottom: -800;
+    margin-top: 150px;
     position: relative;
     z-index: 2;
 }
@@ -265,17 +264,19 @@ nav li .pag {
     height: 430px;
     position: relative;
     z-index: 1;
+    margin-top: -332px;
+    margin-left: 17px;
 }
 .cd{
-    width: 147px;
-    height: 147px;
+    width: 155px;
+    height: 155px;
 }
 .botoes{
     display: flex;
     width: 1264px;
     margin-bottom: 50px;
     justify-content: space-around;
-    margin-left: 45px;
+    margin-left: 120px;
 }
 .brock{
     width: 169px;
@@ -396,18 +397,10 @@ nav li .pag {
     font-family: "mont3";
 
 }
-.textoe a{
-    font-size: 50px;
-    color: white;
-    text-decoration: none;
-}
 .textoe p{
     font-size: 25px;
     font-family: "mont2";
 
-}
-.textoe a:hover{
-    color: #4848D8;
 }
 .textod{
     display: flex;
@@ -418,16 +411,42 @@ nav li .pag {
     margin-top: 50px;
     margin-right: 50px;
 }
-.textod a{
+.aAzul{
     font-size: 50px;
     color: white;
     text-decoration: none;
     font-family: "mont3";
 }
-.textod a:hover{
+.aAzul:hover{
     color: #4848D8;
 }
-
+.aRosa{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: "mont3";
+}
+.aRosa:hover{
+    color: #B41D6C;
+}
+.aAmarelo{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: "mont3";
+}
+.aAmarelo:hover{
+    color: #FEB500;
+}
+.aRoxo{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: "mont3";
+}
+.aRoxo:hover{
+    color: #6A3279
+}
 .textod p{
     font-size: 25px;
     font-family: "mont2";
