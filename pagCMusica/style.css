@@ -230,6 +230,7 @@ nav li .pag {
     justify-content: flex-start;
     align-items: center;
     margin-top: -150px;
+    background-repeat: no-repeat;
 }
 .Tbaner{
     display: flex;

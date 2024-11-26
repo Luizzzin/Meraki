@@ -180,7 +180,8 @@
 }
     </style>
     <script>
-        function showOverlay(id) {
+     // Mostra o overlay correspondente ao ID
+function showOverlay(id) {
     const overlay = document.getElementById(id);
     if (overlay) {
         overlay.style.display = "flex"; // Mostra o overlay
@@ -189,12 +190,14 @@
     }
 }
 
+// Esconde o overlay correspondente ao ID
 function hideOverlay(id) {
     const overlay = document.getElementById(id);
     if (overlay) {
         overlay.style.display = "none"; // Esconde o overlay
     }
 }
+
         function filtrar(grupo) {
             const itens = document.querySelectorAll(".item");
     
