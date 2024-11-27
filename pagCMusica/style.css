@@ -288,6 +288,7 @@ nav li .pag {
     color: #FCE6D9;
     font-family: "mont2";
     box-shadow: 3px 3px 5px black; 
+    cursor: pointer;
 
 }
 .bpop{
@@ -299,6 +300,7 @@ nav li .pag {
     color: #FCE6D9;
     font-family: "mont2";
     box-shadow: 3px 3px 5px black; 
+    cursor: pointer;
 }
 .bmpb{
     width: 169px;
@@ -308,7 +310,8 @@ nav li .pag {
     background-color: #FEB500;
     color: #FCE6D9;
     font-family: "mont2";
-    box-shadow: 3px 3px 5px black; 
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer; 
 
 }
 .bhiphop{
@@ -319,7 +322,8 @@ nav li .pag {
     background-color: #6A3279;
     color: #FCE6D9;
     font-family: "mont2";
-    box-shadow: 3px 3px 5px black; 
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer; 
 
 
 }
@@ -331,7 +335,8 @@ nav li .pag {
     background-color: #4848D8;
     color: #FCE6D9;
     font-family: "mont2";
-    box-shadow: 3px 3px 5px black; 
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer; 
 
 }
 .bk-pop{
@@ -342,7 +347,8 @@ nav li .pag {
     background-color: #B41D6C;
     color: #FCE6D9;
     font-family: "mont2";
-    box-shadow: 3px 3px 5px black; 
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer; 
 
 }
 .itens{

@@ -17,7 +17,19 @@
 #overlay1, #overlay2, #overlay3 {
     display: none;
 }
-
+#overlay1, #overlay2, #overlay3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 @font-face {
     font-family: "mont";
     src: url(./fontes/SwilyBright-Italic.otf);
@@ -47,138 +59,193 @@
     font-family: "mont6";
     src: url(fontes/Minya\ DEMO.otf);
 }
-
-header {
-background-color: #1A0436;
-height: 200px;
-display: flex;
-flex-direction: column;
-}
-
 body {
-overflow: scroll;
-overflow-x: hidden;
-}
-
-body {
-    background-image: url(img/fundo.png);
-    background-size: cover;
-}
-
-.cima {
-background-color: #1A0436;
-height: 90px;
-padding-top:  20px;
-display: flex;
-align-items: center;
-justify-content:space-evenly;
-padding-right: 20px;
-}
-
-.bolha {
-width: 90px;
-height: 75px;
-margin-left: 50px;
-}
-
-.conjuto {
-display: flex;
-flex-direction: row;
-}
-
-.logo {
-font-family: "mont";
-color: white;
-width: 190px;
-height: 45px;
-text-align: center;
-display: flex ;
-font-size: 35px;
-font-weight: 400;
-align-items: center;
-justify-content: center;
-padding-top: 10px;
-
-}
-
-#barraPesquisa {
-width: 700px;
-height: 53.79px;
-background-image: url(img/imgHeaderEFooter/barradepesquisa.png);
-margin: 90px;
-border-radius: 18px;
-padding-right: 20px;
-margin-left: 150px;
-background-size: cover;
-}
-
-#barraPesquisa::-webkit-input-placeholder{
-    color:#ffffff98;
-    font-size:15px;
-}
-input {
-color: white;
-font-family: "mont2";
-font-size: 15px;
-padding-left: 20px;
-}
-
-.barra {
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-.perfil a {
-width: 51px;
-height: 52px;
-border-radius: 18px;
-background-image: url(img/imgHeaderEFooter/perfill.png);
-display: flex;
-align-items: center;
-justify-items: center;
-justify-content: center;
-margin-right: 30px;
-background-size: cover;
-color: rgba(255, 255, 255, 0);
-}
-
-.notificacao {
-width: 51px;
-height: 52px;
-border-radius: 18px;
-background: linear-gradient(90deg, #B41D6C, #2A114B);
-display: flex;
-align-items: center;
-justify-items: center;
-justify-content: center;
-margin-left: -15px;
-}
-
-header .baixo {
-font-family: "mont2";
-display: flex;
-flex-direction: row;
-display: flex;
-justify-content: center;
-}
-
-.baixo a{
-color: white;
-margin: 55px;
-font-size: 15px;
-margin-top: 25px;
-text-decoration: none;
-font-weight: 605;
-font-family: "mont2";
-letter-spacing: 2px;
-transition: ease-in-out 0.3s;
-}
-
-a:hover {
-font-size: 18px;
-}
-
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    
+    body {
+        background-image: url(img/fundo.png);
+        background-size: cover;
+    }
+    
+    header {
+        background-color: #1A0436;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 4;
+        margin-bottom: 50px;
+    }
+    
+    body {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    
+    .ParteDecima {
+        background-color: #1A0436;
+        height: 90px;
+        padding-top:  20px;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        padding-right: 20px;
+    }
+    
+    .bolha {
+        width: 90px;
+        height: 75px;
+    }
+    
+    .logoNome, .logo {
+     font-family: "mont";
+     color: white;
+     width: 190px;
+     height: 45px;
+     text-align: center;
+     display: flex ;
+     font-size: 35px;
+     font-weight: 400;
+     align-items: center;
+     justify-content: center;
+     padding-top: 10px;
+    }
+    
+    #barraPesquisa {
+        width: 700px;
+        height: 53.79px;
+        background-image: url(img/imgHeaderEFooter/barradepesquisa.png);
+        margin:90px;
+        border-radius: 18px;
+        padding-right: 20px;
+        margin-left: 150px;
+        background-size: cover;
+    }
+    
+    #barraPesquisa::-webkit-input-placeholder{
+        color:#ffffff98;
+        font-size:15px;
+    }
+    
+    input {
+        color: white;
+        font-family: "mont2";
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    
+    .barraDePesquisa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .perfil a {
+        width: 51px;
+        height: 52px;
+        border-radius: 18px;
+        background-image: url(img/imgHeaderEFooter/perfill.png);
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin-left: 70px;
+        background-size: cover;
+        color: rgba(255, 255, 255, 0);
+    }
+    
+    .notificacao {
+        width: 51px;
+        height: 52px;
+        border-radius: 18px;
+        background: linear-gradient(90deg, #B41D6C, #2A114B);
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin-left: -10px;
+    }
+    
+    nav {
+        background-color: #1A0436;
+        box-sizing: border-box;
+        margin-top: 25px;
+        display: flex;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    
+    nav li .pag {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 605;
+        font-family: "mont2";
+        letter-spacing: 2px;
+        padding-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 42px;
+    }
+    
+    .inicio {
+        padding-left: 100px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 605;
+        font-family: "mont2";
+        letter-spacing: 2px;
+        padding-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 42px;
+        padding-right: 100px;
+    }
+    
+    .categorias{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 605;
+        font-family: "mont2";
+        letter-spacing: 2px;
+        padding-top: 20px;
+        padding-bottom: 42px;
+    }
+    
+    .dropdown-menu a {
+        display: block;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        background-color: #1A0436;
+        margin-left: -5px;
+        margin-top: 40px;
+        box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.362);
+        display: none;
+    }
+    
+    .opcao:hover {
+        background-color: #B41D6C;
+    }
+    
+    .opcao {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: 605;
+        font-family: "mont2";
+        letter-spacing: 2px;
+        padding: 20px;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 .baner {
     display: flex;
     flex-direction: row;
@@ -186,45 +253,42 @@ font-size: 18px;
     align-items: center;
     width: 1425px;
     height: 905px;
-    position: relative; /* Contexto de empilhamento */
+    position: relative;
 }
 
-/* Imagens devem ter z-index menor que as estrelas */
 .baner img {
     position: absolute;
-    z-index: 1; /* Manter as imagens atrás das estrelas */
+    z-index: 1;
 }
 
-/* Aumentei o z-index das estrelas para garantir que fiquem à frente de tudo */
 .estrelaB1 {
     position: absolute;
     top: 30px;
     left: 50px;
-    z-index: 10; /* Estrela na frente */
+    z-index: 10;
 }
 
 .estrela2B {
     position: absolute;
     top: 200px;
     left: 600px;
-    z-index: 10; /* Estrela na frente */
+    z-index: 10;
 }
 
 .estrela3B {
     position: absolute;
     top: 100px;
     right: 50px;
-    z-index: 10; /* Estrela na frente */
+    z-index: 10;
 }
 
-/* A classe de texto do título */
 .banerT {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
-    z-index: 20; /* Garantindo que o texto fique na frente de todos */
+    z-index: 20;
     margin-left: -250px;
     margin-top: -150px;
 }
@@ -243,7 +307,6 @@ font-size: 18px;
     font-family: "mont";
 }
 
-/* Imagens */
 .Bimg1 {
     margin-left: -900px;
 }
@@ -295,10 +358,12 @@ button{
 .ROSA{
     background-color: #b41d6b;
     border: solid rgb(0, 0, 0) 2px;
+    cursor: pointer;
 }
 .ROXO{
     background-color: #6a3279;
     border: solid rgb(0, 0, 0) 2px;
+    cursor: pointer;
 }
 .item{
     display: flex;
@@ -348,6 +413,7 @@ button{
     width: 433px;
     height: 415px;
     border-radius: 60px 60px 0 0;
+    cursor: pointer;
 }
 .estrela{
     width: 200px;

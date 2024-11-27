@@ -432,6 +432,9 @@ nav li .pag {
     position: relative;
     z-index: 3;
 }
+button{
+    cursor: pointer;
+}
 .filtrar button{
     color: #1a043600;
     background-color: rgba(0, 0, 0, 0.236);

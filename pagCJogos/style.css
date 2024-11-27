@@ -332,10 +332,6 @@ font-family: "mont2";
 letter-spacing: 2px;
 transition: ease-in-out 0.3s;
 }
-
-a:hover {
-font-size: 18px;
-}
 .baner {
     position: relative;
     overflow: hidden;
@@ -465,6 +461,7 @@ button{
     margin-bottom: -50px;
     margin-right: -250px;
     position: relative;
+    cursor: pointer;
 }
 .conteudo {
     width: 100%;
