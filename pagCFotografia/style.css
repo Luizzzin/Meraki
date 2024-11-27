@@ -45,6 +45,8 @@
     visibility: visible;
     background-image: url(img/imgPaisagismo/paisagismoF4.png);
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 .foto-container:hover .hide2{
     opacity: 1;
@@ -452,19 +454,19 @@ nav li .pag {
     gap: 20px;
     margin-right: -10px;
 }
-/* .row3 img{
+.row3 img{
     width: 380px;
     height: 415px;
     padding: 50px;
-} */
+}
 
 .row4{
-    display: flex; /* Flexbox para organizar as imagens */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    align-items: center; /* Alinhamento vertical */
-    gap: 20px; /* Espaçamento entre os contêineres */
-    width: 100%; /* Largura total */
-    height: auto; /* Altura ajustável conforme conteúdo */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .row4 img{
